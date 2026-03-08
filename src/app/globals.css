@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import "modern-css-reset/dist/reset.min.css";
+
+@theme inline {
+  --color-background: var(--bg-page);
+  --color-foreground: var(--text-primary);
+  --font-inter: var(--font-inter);
+}
+
+:root {
+  /* Accent Colors */
+  --accent-primary: #3B82F6;
+  --accent-primary-hover: #2563EB;
+  --accent-secondary: #60A5FA;
+  --accent-success: #10B981;
+  --accent-error: #EF4444;
+  --accent-value: #2563EB;
+
+  /* Text Colors */
+  --text-primary: #0F172A;
+  --text-secondary: #64748B;
+  --text-tertiary: #94A3B8;
+  --text-on-primary: #FFFFFF;
+
+  /* Background Colors */
+  --bg-page: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --bg-info-card: #F1F5F9;
+  --bg-input: #F1F5F9;
+  --bg-input-disabled: #E2E8F0;
+
+  /* Border / Shadow */
+  --border-light: #E2E8F0;
+  --shadow-card: rgba(15, 23, 42, 0.05);
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
